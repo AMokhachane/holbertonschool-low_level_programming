@@ -1,20 +1,35 @@
-#ifndef MAIN_H
-#define MAIN_H
+[11:29] Nhlayiseko Bvuma
+#include "main.h"
+ 
+/**
 
-#include <stdio.h>
-#include <unistd.h>
+* print_chessboard - Prints the chessboard.
 
-int _putchar(char c);
-void reset_to_98(int *n);
-void swap_int(int *a, int *b);
-int _strlen(char *s);
-void _puts(char *str);
-void print_rev(char *s);
-void rev_string(char *s);
-void puts2(char *str);
-void puts_half(char *str);
-void print_array(int *a, int n);
-char *_strcpy(char *dest, char *src);
+* @a: The chessboard array.
 
-#endif
+*/
+
+void print_chessboard(char (*a)[8])
+
+{
+
+    int i, j;
+ 
+    for (i = 0; i < 8; i++)
+
+    {
+
+        for (j = 0; j < 8; j++)
+
+        {
+
+            _putchar(a[i][j]);
+
+        }
+
+        _putchar('\n');
+
+    }
+
+}
 
